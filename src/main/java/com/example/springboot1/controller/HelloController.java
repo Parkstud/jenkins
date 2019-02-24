@@ -3,6 +3,8 @@ package com.example.springboot1.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Date;
+
 /**
  * @author chenmiao
  * @version 1.0
@@ -17,6 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/hello")
     public String hello() {
-        return "hello,this is a springboot demo";
+        return "hello,this is a springboot demo"+new Date();
     }
 }
