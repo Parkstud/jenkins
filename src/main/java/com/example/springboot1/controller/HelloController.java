@@ -19,6 +19,6 @@ import java.util.Date;
 public class HelloController {
     @GetMapping("/hello")
     public String hello() {
-        return "hello,this is a springboot demo"+new Date();
+        return "测试 Jenkins自动构建"+new Date();
     }
 }
